@@ -1,0 +1,53 @@
+h1 {
+	text-align: center;
+}
+* {
+	box-sizing: border-box;
+}
+.row section, span {
+	border: 1px solid black;
+}
+section {
+	padding: 5px;
+	margin: 10px;
+	background-color: #FFEBCD;
+	font-size: 18px;
+}
+.col1 span {
+	background-color: red;
+}
+.col2 span {
+	background-color: violet;
+}
+.col3 span {
+	background-color: yellow;
+}
+section {
+	position: relative;
+}
+span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	text-align: center;
+}
+p {
+	margin-top: 20px;
+}
+@media (min-width: 992px) {
+	.col1 , .col2 , .col3 {
+		float: left;
+		width: 33.33%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.col1, .col2 {
+		float: left;
+		width: 50%;
+	}
+	.col3 {
+		float: left;
+		width: 100%;
+	}
+}
